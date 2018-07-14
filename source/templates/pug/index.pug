@@ -1,4 +1,4 @@
-include ./helpers/mixins
+//- include ./helpers/mixins
 
 doctype html
 html
@@ -7,7 +7,14 @@ html
         link(rel="stylesheet" href='style/foundation.css')
         link(rel="stylesheet" href='style/style.css')
     body
-        +select('c-select', ['some1', 'some2', 'some3', 'some4'])
+
+        section.top-section
+            .main
+                .header
+                    .logo
+
+                .top-section__title НАЧНИ ЗАРАБАТЫВАТЬ
+
 
 
 
