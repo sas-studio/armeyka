@@ -8,8 +8,8 @@
 }
 
 @font-face {
-    font-family: dinpro;
     src: url(/fonts/db.otf);
+    font-family: dinpro;
     font-weight: bold;
     font-style: normal;
 }
@@ -18,5 +18,8 @@ body {
     font-family: dinpro;
 }
 
+$colorred: #FE0900;
+
 @import "helpers/**/*.scss";
 @import "components/**/*.scss";
+//@import "section-two.scss";

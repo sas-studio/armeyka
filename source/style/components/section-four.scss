@@ -1,0 +1,80 @@
+.section-four__block{
+   display: flex;
+   justify-content: center;
+   padding-top: 112.49px;
+}
+
+.section-four__block1,
+.section-four__block2,
+.section-four__block3{
+    margin-right: 50px;
+    width: 26%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.section-four__digits{
+    color: $colorred;
+    font-size: 70px;
+    font-family: dinpro;
+    font-weight: bold;
+    margin-right: 17px;
+}
+
+.section-four__text{
+    font-size: 21px;
+    font-family: dinpro;
+    font-weight: bold;
+}
+
+.section-four__blockred{
+    font-family: dinpro;
+    font-weight: bold;
+    color: #FFFFFF;
+    width: 320px;
+    height: 148px;
+    border: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: $colorred;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.section-four__text-top,
+.section-four__text-white{
+    font-size-adjust: 21px;
+}
+
+.section-four__text-top{
+    position: absolute;
+    top: 28px;
+    left: 28px;
+}
+
+.section-four__digits-white{
+    font-size: 70px;
+    padding-left: 28px;
+    padding-right: 11px;
+}
+
+.section-four__star{
+    width: 19.12;
+    height: 18.24px;
+    position: absolute;
+    top: 28px;
+    right: 19.88px;
+}
+
+.section-four__text-hint{
+    font-family: dinpro;
+    font-weight: normal;
+    font-size: 21px;
+    position: absolute;
+    bottom: -32px;
+}
+

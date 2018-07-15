@@ -1,0 +1,88 @@
+.section-six__title{
+    margin-top: 31px;
+    margin-bottom: 38.49px;
+}
+
+.section-six__block{
+    display: flex;
+    position: relative;
+}
+
+.section-six__left-title{
+    margin-left: 128px;
+    margin-bottom: 44px;
+    font-family: dinpro;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.section-six__block-left,
+.section-six__block-right{
+    width: 50%;
+}
+
+.section-six__block-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.section-six__description-block{
+    margin-left: 128px;
+    margin-bottom: 25px;
+}
+
+.circle2,
+.circle4,
+.circle5{
+    margin-bottom: 19px;
+}
+
+.circle3{
+    margin-bottom: 38px;
+}
+
+// фоточка спарава
+.section-six__block-right{
+    background-color: black;
+    color: white;
+    height: 511px;
+}
+
+// кнопки слайдера
+.section-six__blockbuttons{
+    position: relative;
+}
+
+.section-six__img-left,
+.section-six__img-right{
+    width: 30px;
+    height: 30px;
+}
+
+.section-six__img-left{
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 76px;
+    left: 127px;
+}
+
+.section-six__img-right{
+    position: absolute;
+    bottom: 76px;
+    left: 220px;
+}
+
+.section-six__numberpage-sizemax{
+    position: absolute;
+    bottom: 78px;
+    left: 177px;
+    font-size: 18px;
+    font-family: dinpro;
+    font-weight: normal;
+}
+
+.section-six__numberpage-sizemin{
+    font-size: 12px;
+}
+

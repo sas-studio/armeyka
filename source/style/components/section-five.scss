@@ -1,0 +1,138 @@
+.section-five{
+    background-color: #F5F4F4;
+    margin-top: 90px;
+
+}
+
+.section-five__title-text{
+    padding-top: 14px;
+}
+
+.section-five__minititle{
+    display: flex;
+    justify-content: center;
+}
+
+.section-five__minititle-text{
+    background-color: $colorred;
+    text-align: center;
+    width: 567.17px;
+    height: 34px;
+}
+
+.section-five__margintop{
+    padding-top: 6px;
+    color: white;
+    font-size: 18px;
+    font-family: dinpro;
+    font-weight: normal;
+}
+
+.section-five__dottedline{
+    border-bottom: 1px dashed white;
+}
+
+.section-five__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 66px;
+}
+
+.section-five__block1,
+.section-five__block2,
+.section-five__block3,
+.section-five__block4,
+.section-five__block5,
+.section-five__block6{
+    width: 27%;
+    height: 230px;
+    background-color: white;
+    border: 1px solid #EDEDED; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-five__block1{
+    border-top-left-radius: 10px;
+}
+
+.section-five__block3{
+    border-top-right-radius: 10px;
+}
+
+.section-five__block4{
+    border-bottom-left-radius: 10px;
+}
+
+.section-five__block6{
+    border-bottom-right-radius: 10px;
+}
+
+.section-five__digits{
+    font-family: dinpro;
+    font-weight: bold;
+    color: $colorred;
+    font-size: 45px;
+    position: absolute;
+    left: 50px;
+    top: 52px;
+}
+
+.section-five__digits-top{
+    top: 61px;
+}
+
+.section-five__size30{
+    font-size: 30px;
+}
+
+.section-five__block-text{
+    font-family: dinpro;
+    font-weight: normal;
+    font-size: 21px;
+    position: absolute;
+    left: 50px;
+    top: 126px;
+}
+
+.section-five__block-texttop{
+    top: 117px;
+}
+
+.section-five__img1{
+    width: 55.43px;
+    height: 64.07px;
+    position: absolute;
+    top: 41.93px;
+    right: 20.77px;
+}
+
+.section-five__img2{
+    width: 69.98px;
+    height: 70px;
+    position: absolute;
+    top: 36px;
+    right: 23.02px;
+}
+
+.section-five__img3{
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 43px;
+    right: 19px;
+}
+
+.section-five___text-bottom{
+    text-align: center;
+    font-size: 18px;
+    font-family: dinpro;
+    font-weight: normal;
+    margin-top: 48px;
+    padding-bottom: 103px;
+}
+
