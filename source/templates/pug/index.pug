@@ -477,10 +477,39 @@ html
         section.section-form
             .main
                 .section-form__content
-                    .section-form__form
+                    form.section-form__form
+                        .super-title.section-form__super-title
+                            span.super-title__red [
+                            span  ОСТАЛИСЬ ВОПРОСЫ?
+                            span.super-title__red ]
+                        .section-form__subtitle
+                            | Оставьте заявку и с Вами свяжется
+                            br
+                            | директор по франчайзингу
+
+                        input(type="text" placeholder="Ваше имя").section-form__input
+                        input(type="tel" placeholder="Телефон").section-form__input
+                        input(type="email" placeholder="email").section-form__input
+
+                        button(type="submit").button.section-form__button ПОЛУЧИТЬ БИЗНЕС-ПЛАН
+
+                        .section-form__confidence
+                            .checkbox
+                                input(type="checkbox" id="agree-confidence")
+                                label(for="agree-confidence")
+                            span
+                                | Я согласен и ознакомлен с
+                                a(href="")  Пользовательским соглашением
+                                |  и
+                                a(href="")  Политикой конфиденциальности
+
+
+
 
                     .section-form__photo
-                        img(src="./images/director.jpg", alt="")
+                        .section-form__director
+                            .section-form__director-name Некрасов Никита
+                            .section-form__director-position директор по франчайзингу
 
 
 

@@ -4,13 +4,95 @@
 
     &__content {
         display: flex;
+        align-items: stretch;
     }
 
     &__form {
         flex: 1;
+        background-color: #fff;
+        padding: 88px 54px;
     }
 
     &__photo {
         width: 653px;
+        background-image: url('../images/director.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        position: relative;
+    }
+
+    &__director {
+        color: #fff;
+        position: absolute;
+        bottom: 21px;
+        right: 15px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        font-size: 21px;
+        line-height: 25px;
+
+        &-name {
+            font-weight: bold;
+        }
+    }
+
+    &__super-title {
+        text-align: left !important;
+        margin-bottom: 32px;
+    }
+
+    &__subtitle {
+        color: $colorred;
+        font-size: 19px;
+        font-weight: bold;
+        margin-bottom: 31px;
+        line-height: 25px;
+    }
+
+    &__input {
+        height: 70px;
+        width: 380px;
+        background-color: #F5F4F4;
+        border-radius: 5px 5px 0 0;
+        padding: 0 21px;
+
+        display: block;
+        margin-bottom: 10px;
+
+        color: #2B2B2B;
+        font-size: 18px;
+        @include placeholder {
+            color: #989898;
+            font-size: 16px;
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+    }
+
+    &__confidence {
+        margin-top: 35px;
+        display: flex;
+        align-items: flex-start;
+
+        .checkbox {
+            margin-right: 11px;
+            margin-top: -2px;
+        }
+
+        a {
+            color: #F45953;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }

@@ -1,0 +1,19 @@
+.checkbox {
+    input {
+        display: none;
+    }
+    label {
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 5px;
+        background-color: #F5F4F4;
+        background-repeat: no-repeat;
+        background-position: center center;
+        cursor: pointer;
+    }
+    input:checked + label {
+        // background-image: url('../images/i/slider.svg');
+        background-color: $colorred;
+    }
+}
