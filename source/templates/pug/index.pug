@@ -11,9 +11,40 @@ html
         section.top-section
             .main
                 .header
-                    .logo
+                    .logo.header__logo
+                        img(src="./images/logo.png", alt="")
+                    .banner.header__banner
+                        span Новосибирск
+                        |&nbsp;- свободен для открытия франшизы
+                    .header__contacts
+                        .header__tel
+                            |+ 7 383&nbsp;
+                            span 388-48-04
+                        .header__place.top-section__place
+                            span Новосибирск
+                            button
+                                img(src="./images/i/G61.svg", alt="")
 
                 .top-section__title НАЧНИ ЗАРАБАТЫВАТЬ
+                .top-section__subtitle
+                    | на помощи призывникам в&nbsp;
+                    .top-section__place.top-section__place--big
+                        span Новосибирске
+                        button
+                            img(src="./images/i/G61.svg", alt="")
+
+                .top-section__price.top-section-price
+                    .top-section-price__text от 300 000 рублей в месяц
+                    .top-section-price__bottom
+                        span
+                        img(src="./images/i/star.svg", alt="")
+                        span
+
+                .top-section__btn
+                    button.button получить бизнес-план
+
+                .top-section__btn-down
+                    img(src="./images/i/down-arrow.svg", alt="")
 
         section.section-two
             .section-two__title.section__title

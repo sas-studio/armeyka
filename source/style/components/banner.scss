@@ -1,0 +1,13 @@
+.banner {
+    background-color: #fff;
+    color: #000000;
+    font-size: 18px;
+
+    padding: 8px 20px;
+
+    span {
+        color: $colorred;
+        border-bottom: 2px dashed $colorred;
+        padding-bottom: 2px;
+    }
+}
