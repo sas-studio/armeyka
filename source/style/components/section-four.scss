@@ -1,18 +1,28 @@
-.section-four__block{
-   display: flex;
-   justify-content: center;
-   padding-top: 112.49px;
+.section-four {
+    padding: 83px 0 119px;
+
+    &__block3 {
+        position: relative;
+    }
 }
 
-.section-four__block1,
-.section-four__block2,
-.section-four__block3{
-    margin-right: 50px;
-    width: 26%;
+.section-four__block{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 112.49px;
+}
+
+.section-four__content-block {
+    width: 320px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.section-four__block3 {
+
 }
 
 .section-four__digits{
@@ -21,12 +31,22 @@
     font-family: dinpro;
     font-weight: bold;
     margin-right: 17px;
+
+    &--white {
+        color: #fff;
+    }
 }
 
-.section-four__text{
+.section-four__text {
     font-size: 21px;
     font-family: dinpro;
     font-weight: bold;
+
+    margin-top: -10px;
+
+    &--white {
+        color: #fff;
+    }
 }
 
 .section-four__blockred{
@@ -34,36 +54,31 @@
     font-weight: bold;
     color: #FFFFFF;
     width: 320px;
+    padding: 28px;
     height: 148px;
     border: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: $colorred;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
     position: relative;
+
+    .section-four__content-block {
+        width: 100%;
+        justify-content: flex-start;
+    }
 }
 
-.section-four__text-top,
-.section-four__text-white{
-    font-size-adjust: 21px;
+.section-four__text-top {
+    font-size: 21px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
-.section-four__text-top{
-    position: absolute;
-    top: 28px;
-    left: 28px;
-}
-
-.section-four__digits-white{
-    font-size: 70px;
-    padding-left: 28px;
-    padding-right: 11px;
-}
 
 .section-four__star{
-    width: 19.12;
+    width: 19.12px;
     height: 18.24px;
     position: absolute;
     top: 28px;
@@ -71,10 +86,14 @@
 }
 
 .section-four__text-hint{
+    color: #000000;
     font-family: dinpro;
     font-weight: normal;
     font-size: 21px;
     position: absolute;
     bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
 }
 
