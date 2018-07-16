@@ -1,0 +1,31 @@
+.ui-slider-horizontal {
+    height: 10px;
+}
+.ui-widget.ui-widget-content {
+    border: 0px solid rgba(0,0,0,0);
+    background-color: #E2E2E2;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-br, .ui-corner-right {
+    border-bottom-right-radius: 7px;
+}
+
+.ui-corner-all, .ui-corner-bl, .ui-corner-bottom, .ui-corner-left {
+    border-bottom-left-radius: 7px;
+}
+.ui-corner-all, .ui-corner-right, .ui-corner-top, .ui-corner-tr {
+    border-top-right-radius: 7px;
+}
+.ui-corner-all, .ui-corner-left, .ui-corner-tl, .ui-corner-top {
+    border-top-left-radius: 7px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    background-color: $colorred;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 7px solid #5D5D50;
+    background: #f6f6f6;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin-top: -3px;
+}
