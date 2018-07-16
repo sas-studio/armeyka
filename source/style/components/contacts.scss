@@ -1,0 +1,15 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    &__tel {
+        color: #fff;
+        font-size: 21px;
+
+        span {
+            font-size: 29px;
+            font-weight: bold;
+        }
+    }
+}

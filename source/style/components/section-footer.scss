@@ -1,0 +1,26 @@
+.section-footer {
+    background-color: #393939;
+    display: flex;
+    justify-content: center;
+    padding: 41px 0;
+
+    color: #fff;
+
+    &__left {
+
+    }
+    &__middle {
+        margin: 0 272px 0 105px;
+    }
+    &__right {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    &__logo {
+        margin-bottom: 25px;
+    }
+    &__contacts {
+        align-items: flex-start;
+    }
+}

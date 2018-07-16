@@ -1,0 +1,32 @@
+.place {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 5px;
+
+    span {
+        color: #fff;
+        border-bottom: 2px dashed #fff;
+        padding-bottom: 1px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    button {
+        display: flex;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        margin-left: 8px;
+    }
+
+    &--big {
+        align-items: center;
+        span {
+            font-size: inherit;
+        }
+        button {
+            margin-left: 10px;
+        }
+    }
+}
