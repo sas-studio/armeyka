@@ -1,0 +1,11 @@
+.super-title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    &__red {
+        color: $colorred;
+    }
+}

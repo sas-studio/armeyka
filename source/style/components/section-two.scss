@@ -1,43 +1,33 @@
-.section__title{
-    text-align: center;
-    padding-top: 79px;
-    padding-bottom: 47.51px;
-}
+.section-two {
+    padding: 79px 0;
 
-.section__title-text{
-    font-size: 30px;
-    font-family: dinpro;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+    &__title {
+        margin-bottom: 47px;
+    }
 
-.section__span-red {
-    color: $colorred;
-}
-
-.section-two__block{
-    display: flex;
-    justify-content: center;
+    &__block{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .section-two__block1,
 .section-two__block2,
 .section-two__block3{
-    width: 28%;
+    flex: 1;
     height: 260.49px;
     background-color: #FAFAFA;
     border: 1px solid #EDEDED;
     margin: 0 3px;
-    display: flex;
-    flex-direction: column;
+    padding: 40px;
     position: relative;
-    align-items: flex-start;
-    justify-content: space-around;
 }
 
-.section-two__caption,
-.section-two__text{
-    padding-left: 40px;
+.section-two__caption {
+    margin-bottom: 38px;
+}
+.section-two__text {
+    font-size: 16px;
 }
 
 .section-two__dinprobold{
@@ -77,19 +67,25 @@
     color: black;
 }
 
-.description{
+.section-two__button{
+    text-align: center;
+    margin-top: 29px;
+}
+
+.description {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: dinpro;
     font-weight: normal;
     font-size: 21px;
+    line-height: 27px;
 }
 
 .description__block{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .circle{
@@ -99,39 +95,17 @@
     border: none;
     border-radius: 50%;
     background-color: $colorred;
-}
 
-.circle-center{
-    width: 10px;
-    height: 10px;
-    margin-right: 6px;
-    border: none;
-    border-radius: 50%;
-    background-color: $colorred;
-    margin-bottom: 22px;
+    display: inline-block;
+    margin-top: 6px;
 }
 
 .description__textpaddingleft{
     padding-left: 74px;
 }
 
-.section-two__button{
-    text-align: center;
-    padding: 29px 0px 78px 0px;
-    position: relative;
-}
 
-// .button-shadowblock{
-//     width: 270px;
-//     height: 70px;
-//     background-color: #cc2727;
-//     // position: absolute;
-//     // bottom: 70px;
-//     // left: 594px;
-//     text-align: center;
-//     padding: 29px 0px 78px 0px;
-//     z-index: 100;
-// }
+
 
 
 

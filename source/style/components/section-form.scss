@@ -1,0 +1,16 @@
+.section-form {
+    background-color: #F5F4F4;
+    padding: 91px 0 77px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__form {
+        flex: 1;
+    }
+
+    &__photo {
+        width: 653px;
+    }
+}
