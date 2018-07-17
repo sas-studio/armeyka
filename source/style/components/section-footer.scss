@@ -24,3 +24,23 @@
         align-items: flex-start;
     }
 }
+
+@media screen and (max-width: 1200px){
+    .section-footer {
+        flex-direction: column;
+        padding: 41px 22px 24px;
+
+        &__left {
+            margin-bottom: 30px;
+        }
+        &__middle {
+            margin: 0;
+            margin-bottom: 39px;
+        }
+        &__contacts {
+            .contacts__place.place span {
+                color: $colorred;
+            }
+        }
+    }
+}
