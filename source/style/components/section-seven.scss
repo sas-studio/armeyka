@@ -114,20 +114,33 @@
 
 @media screen and (max-width: 1200px) {
     .section-seven{
-        padding: 65px 0 51px;
 
-        .main {
+        padding-top: 65px;
+
+        .main{
             width: 100%;
         }
 
-        &__title {
-            margin-bottom: 65px;
+        &__title{
+            margin-bottom: 51.17px;
         }
+
         &__block{
             width: 100%;
+            height: 200px;
+            padding: 26.65px 32.36px 0;
+
+            &--1{
+                border-radius: 0px;
+            }
             &--2{
                 display: none;
             }
+
+            &--{
+                border-radius: 0px;
+            }
+
             &--4{
                 display: none;
             }
@@ -140,10 +153,13 @@
 
         &__digits{
             font-size: 16px;
+            margin-bottom: 34.16px;
+            line-height: 21px;
         }
 
         &__block-text{
             font-size: 16px;
+            line-height: 21px;
         }
 
         &__img1{

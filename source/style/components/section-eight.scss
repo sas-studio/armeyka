@@ -107,28 +107,56 @@
 
 @media screen and (max-width: 1200px){
     .section-eight{
+        padding: 41px 0 50px;
+        .maim{
+            width: 100%;
+        }
+
         &__block{
+            padding: 37.53px 23.22px 0;
+
+            &--1{
+                border-radius: 0px;
+            }
+
+            &--3{
+                border-radius: 0px;
+            }
+
             &--4{
                 display: none;
             }
             width: 100%;
         }
 
+        &__title{
+            margin-bottom: 33px;
+        }
+
         &__foto{
             width: 78.19px;
             height: 78.19px;
+            margin-right: 19.66px;
         }
 
         &__name{
             font-size: 16px;
+            line-height: 20px;
         }
 
         &__location{
             font-size: 16px;
+            line-height: 23px;
+        }
+
+        &__block-desc{
+            margin-bottom: 40.11px;
         }
 
         &__block-text{
             font-size: 16px;
+            line-height: 23px;
+            margin-bottom: 19px;
         }
 
         &__block-button{
@@ -143,6 +171,11 @@
 
         &__btntext{
             font-size: 12px;
+        }
+
+        &__button{
+            margin-top: 37.8px;
+            text-align: center;
         }
     }
 }
