@@ -1,5 +1,10 @@
 .section-five{
     background-color: #F5F4F4;
+    padding: 93px 0 103px;
+
+    &__title {
+        margin-bottom: 40px;
+    }
 }
 
 .section-five__title-text{
@@ -30,7 +35,7 @@
     border-bottom: 1px dashed white;
 }
 
-.section-five__block{
+.section-five__blocks{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -39,35 +44,27 @@
     margin-top: 66px;
 }
 
-.section-five__block1,
-.section-five__block2,
-.section-five__block3,
-.section-five__block4,
-.section-five__block5,
-.section-five__block6{
-    width: 27%;
+.section-five__block {
+    width: 33.3%;
     height: 230px;
     background-color: white;
     border: 1px solid #EDEDED;
     position: relative;
     display: flex;
     flex-direction: column;
-}
 
-.section-five__block1{
-    border-top-left-radius: 10px;
-}
-
-.section-five__block3{
-    border-top-right-radius: 10px;
-}
-
-.section-five__block4{
-    border-bottom-left-radius: 10px;
-}
-
-.section-five__block6{
-    border-bottom-right-radius: 10px;
+    &--1 {
+        border-top-left-radius: 10px;
+    }
+    &--3 {
+        border-top-right-radius: 10px;
+    }
+    &--4 {
+        border-bottom-left-radius: 10px;
+    }
+    &--6 {
+        border-bottom-right-radius: 10px;
+    }
 }
 
 .section-five__digits{
@@ -131,6 +128,6 @@
     font-family: dinpro;
     font-weight: normal;
     margin-top: 48px;
-    padding-bottom: 103px;
+    line-height: 24px;
 }
 
