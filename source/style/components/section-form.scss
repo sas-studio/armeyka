@@ -99,6 +99,66 @@
 
 @media screen and (max-width: 1200px){
     .section-form{
+
+        &__content{
+            flex-direction: column;
+        }
+
+        &__super-title{
+            margin: 27px 67px;
+        }
+
+        &__subtitle{
+            font-size: 16px;
+            line-height: 21px;
+            text-align: center;
+            margin-bottom: 46px;
+        }
+
+        &__form{
+            width: 100%;
+            padding: 44px 16px 46px;
+            text-align: center;
+        }
+
+        &__input{
+            width: 345px;
+            height: 70px;
+            margin-bottom: 10px;
+        }
+
+        &__button{
+            margin: 24px 0 39px 0;
+        }
+
+        &__confidence{
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        &__photo{
+            width: 374.86px;
+            height: 414.93px;
+            margin: 0 auto;
+        }
+
+        &__director{
+            right: 19.04px;
+            bottom: 15.85px;
+        }
+
+        &__director-name{
+            font-size: 13px;
+            line-height: 15px;
+        }
+
+        &__director-position{
+            font-size: 13px;
+            line-height: 15px;
+        }
+
         .main{
             width: 100%;
         }
