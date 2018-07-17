@@ -10,3 +10,10 @@
         color: $colorred;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .super-title {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}

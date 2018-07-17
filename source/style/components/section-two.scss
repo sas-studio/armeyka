@@ -9,6 +9,10 @@
         display: flex;
         justify-content: center;
     }
+
+    &__description {
+        text-align: center;
+    }
 }
 
 .section-two__block1,
@@ -30,34 +34,33 @@
     font-size: 16px;
 }
 
-.section-two__dinprobold{
+.section-two__dinprobold {
     font-family: dinpro;
     font-weight: bold;
     font-size: 27px;
     color: $colorred;
 }
 
-.section-two__donpromedium{
+.section-two__donpromedium {
     font-family: dinpro;
     font-weight: normal;
     font-size: 16px;
 }
 
-.section-two__img{
+.section-two__img {
     width: 51.5px;
     position: absolute;
     right: 25.5px;
     top: 37.49px;
 }
 
-.section-two__title2{
+.section-two__title2 {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 29px;
 }
 
 .section-two__title-text2{
-    font-family: dinpro;
     font-weight: bold;
     font-size: 27px;
     color: $colorred;
@@ -72,6 +75,68 @@
     margin-top: 29px;
 }
 
+@media screen and (max-width: 1200px) {
+    .section-two {
+        padding: 47px 0 52px;
+
+        &__title {
+            margin-bottom: 33px;
+        }
+
+        &__block {
+            flex-direction: column;
+        }
+
+        &__block1,
+        &__block2,
+        &__block3 {
+            padding: 35px;
+            height: 230px;
+        }
+
+        &__dinprobold {
+            font-size: 22px;
+        }
+
+        &__caption {
+            margin-bottom: 37px;
+        }
+
+        &__donpromedium {
+            font-size: 13px;
+            line-height: 19px;
+        }
+
+        &__img {
+            top: 30px;
+            right: 22px;
+        }
+
+        &__title2 {
+            padding-top: 42px;
+        }
+
+        &__title-text2 {
+            font-size: 18px;
+        }
+
+        &__description {
+            .description__block {
+                margin-left: 0px;
+                padding: 0 15px;
+                &::before {
+                    display: none;
+                }
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+
+        &__button {
+            margin-top: 40px;
+        }
+    }
+}
 
 
 
