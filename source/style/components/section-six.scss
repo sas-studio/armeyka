@@ -103,3 +103,44 @@
     font-size: 12px;
 }
 
+@media screen and (max-width: 1200px) {
+    .section-six {
+        padding: 51px 0 292px;
+        background: {
+            position: center bottom;
+            size: 375px auto;
+        }
+
+        .main {
+            position: relative;
+        }
+
+        &__nav {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__title {
+            padding: 0;
+            margin-bottom: 100px;
+        }
+
+        &__block-left {
+            width: 100%;
+            padding: 0 15px;
+        }
+
+        &__left-title {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        &__description-block {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
