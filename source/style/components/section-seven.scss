@@ -1,5 +1,10 @@
 .section-seven{
     background-color: #F5F4F4;
+    padding: 89px 0 86px;
+
+    &__title {
+        margin-bottom: 83px;
+    }
 }
 
 .section-seven__title-text{
@@ -7,41 +12,34 @@
     margin-bottom: 36.49px;
 }
 
-.section-seven__block{
+.section-seven__blocks{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 86.1px;
 }
 
-.section-seven__block1,
-.section-seven__block2,
-.section-seven__block3,
-.section-seven__block4,
-.section-seven__block5,
-.section-seven__block6{
-    width: 45%;
+.section-seven__block {
+    width: 50%;
     height: 315px;
     background-color: white;
     border: 1px solid #EDEDED;
     position: relative;
-}
+    padding: 57px 51px 0;
 
-.section-seven__block1-borderraius{
-    border-top-left-radius: 10px;
-}
 
-.section-seven__block2-borderraius{
-    border-top-right-radius: 10px;
-}
-
-.section-seven__block5-borderraius{
-    border-bottom-left-radius: 10px;
-}
-
-.section-seven__block6-borderraius{
-    border-bottom-right-radius: 10px;
+    &--1 {
+        border-top-left-radius: 10px;
+    }
+    &--2 {
+        border-top-right-radius: 10px;
+    }
+    &--3 {
+        border-bottom-left-radius: 10px;
+    }
+    &--4 {
+        border-bottom-right-radius: 10px;
+    }
 }
 
 .section-seven__digits{
@@ -49,14 +47,12 @@
     font-size: 23px;
     font-family: dinpro;
     font-weight: bold;
-    margin: 57px 0px 59px 51px;
+    margin-bottom: 50px;
 }
 
 .section-seven__block-text{
-    font-family: dinpro;
-    font-weight: normal;
     font-size: 18px;
-    margin-left: 50px;
+    line-height: 23px;
 }
 
 .section-seven__img1{
