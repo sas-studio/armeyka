@@ -2,3 +2,9 @@
     background-color: #F5F4F4;
     padding: 81px 0 93px;
 }
+
+@media screen and (max-width: 1200px) {
+    .section-three {
+        padding: 45px 0 0;
+    }
+}

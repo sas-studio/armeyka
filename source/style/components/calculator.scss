@@ -136,3 +136,39 @@
         margin-bottom: 42px;
     }
 }
+
+@media screen and (max-width: 1200px) {
+    .calculator {
+        width: 100%;
+        flex-direction: column;
+        background-color: rgba(0,0,0,0);
+
+        &__title {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        &__left {
+            padding: 0;
+        }
+        &__right {
+            width: 100%;
+            padding: 50px 15px;
+            text-align: center;
+        }
+
+        &__row {
+            margin-bottom: 65px;
+
+            &-title {
+                font-size: 16px;
+            }
+            &-value {
+                background-color: #fff;
+            }
+            &-price-text {
+                margin-bottom: -20px;
+            }
+        }
+    }
+}
