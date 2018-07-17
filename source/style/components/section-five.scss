@@ -5,6 +5,10 @@
     &__title {
         margin-bottom: 40px;
     }
+
+    &__banner {
+        margin: 0 auto;
+    }
 }
 
 .section-five__title-text{
@@ -143,7 +147,12 @@
             margin-bottom: 33px;
         }
 
+        &__banner {
+            margin-bottom: 25px;
+        }
+
         &__blocks {
+            margin-top: 0;
             flex-direction: column;
         }
         &__block {

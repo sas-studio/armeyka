@@ -1,7 +1,13 @@
 .banner {
-    background-color: #fff;
+    background: {
+        image: url('../images/plashka.png');
+        size: contain;
+        repeat: no-repeat;
+        position: center center;
+    }
     color: #000000;
     font-size: 18px;
+    text-align: center;
 
     padding: 8px 20px;
 
@@ -9,5 +15,26 @@
         color: $colorred;
         border-bottom: 2px dashed $colorred;
         padding-bottom: 2px;
+    }
+
+    &--red {
+        background-image: url('../images/plashka3.png');
+        color: #fff;
+        span {
+            color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .banner {
+        font-size: 13px;
+        padding: 6px 0px;
+        width: 333px;
+
+        span {
+            padding-bottom: 1px;
+        }
     }
 }
