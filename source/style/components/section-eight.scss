@@ -108,12 +108,15 @@
 @media screen and (max-width: 1200px){
     .section-eight{
         padding: 41px 0 50px;
-        .maim{
+
+        .main{
             width: 100%;
         }
 
         &__block{
             padding: 37.53px 23.22px 0;
+            height: auto;
+            padding-bottom: 41px;
 
             &--1{
                 border-radius: 0px;
