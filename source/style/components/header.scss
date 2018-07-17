@@ -11,3 +11,14 @@
 
     }
 }
+
+
+@media screen and (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+
+        &__logo {
+            margin-bottom: 24px;
+        }
+    }
+}

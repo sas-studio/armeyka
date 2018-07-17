@@ -24,11 +24,11 @@
 }
 
 .h-fleft50 {
-    float: left; 
+    float: left;
     width: 50%;
 }
 .h-right50 {
-    float: right; 
+    float: right;
     width: 50%;
 }
 
@@ -72,7 +72,7 @@
 }
 
 .h-blocks {
-    display: inline-block; 
+    display: inline-block;
     width: 100%;
 }
 
@@ -100,7 +100,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .h-adaptive-hide {
         display: none;
     }
