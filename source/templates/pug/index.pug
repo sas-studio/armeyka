@@ -274,25 +274,54 @@ html
                     span  СФЕРА ПОМОЩИ ПРИЗЫВНИКАМ — СОЦИАЛЬНО И ЭКОНОМИЧЕСКИ ПОЛЕЗНА!
                     span.super-title__red  ]
                 .section-six__left-title Экономическая польза для государства
-                .section-six__block
-                    .section-six__block-left
+                .section-six__block#slider
+
+                    .section-six__block-left.slider__slide.slider__slide--1
                         div.description__block.section-six__description-block среднестатистический россиянин получает 33000руб в мес.
                         div.description__block.section-six__description-block с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);
                         div.description__block.section-six__description-block когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике
                         div.description__block.section-six__description-block в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц
                         div.description__block.section-six__description-block а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;
+
+                    div(style="display: none;").section-six__block-left.slider__slide.slider__slide--2
+                        div.description__block.section-six__description-block среднестатистический россиянин получает 33000руб в мес.
+                        div.description__block.section-six__description-block с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);
+                        div.description__block.section-six__description-block когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике
+                        div.description__block.section-six__description-block в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц
+                        div.description__block.section-six__description-block а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;
+
+                    div(style="display: none;").section-six__block-left.slider__slide.slider__slide--3
+                        div.description__block.section-six__description-block среднестатистический россиянин получает 33000руб в мес.
+                        div.description__block.section-six__description-block с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);
+                        div.description__block.section-six__description-block когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике
+                        div.description__block.section-six__description-block в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц
+                        div.description__block.section-six__description-block а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;
+
+                    div(style="display: none;").section-six__block-left.slider__slide.slider__slide--4
+                        div.description__block.section-six__description-block среднестатистический россиянин получает 33000руб в мес.
+                        div.description__block.section-six__description-block с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);
+                        div.description__block.section-six__description-block когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике
+                        div.description__block.section-six__description-block в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц
+                        div.description__block.section-six__description-block а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;
+
+                    div(style="display: none;").section-six__block-left.slider__slide.slider__slide--5
+                        div.description__block.section-six__description-block среднестатистический россиянин получает 33000руб в мес.
+                        div.description__block.section-six__description-block с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);
+                        div.description__block.section-six__description-block когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике
+                        div.description__block.section-six__description-block в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц
+                        div.description__block.section-six__description-block а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;
+
                     .section-six__block-right.h-adaptive-hide
                         // img(src="", alt="Фоточка троих очень счастливых людей)")
 
                 .section-six__nav
-                    button.section-six__prev
+                    button.section-six__prev#slider-prev
                         img.section-six__img-left(src="./images/i/right.svg", alt="")
                     .section-six__numberpage
                         p.section-six__numberpage-sizemax
-                            span
-                            | 1
+                            span#slider-page 1
                             span.section-six__numberpage-sizemin /5
-                    button.section-six__next
+                    button.section-six__next#slider-next
                         img.section-six__img-right(src="./images/i/right.svg", alt="")
 
         section.section-seven
@@ -324,8 +353,6 @@ html
                             img.section-seven__img4(src="./images/i/computer4.svg", alt="")
                     .section-seven__block.section-seven__block--3
                         .section-seven__digits.section-seven__digits--paddingright Известный в России брэнд
-                            //- br
-                            //- | брэнд
                         .section-seven__block-text Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.
                             img.section-seven__img5(src="./images/i/team5.svg", alt="")
                     .section-seven__block.section-seven__block--4
@@ -487,6 +514,8 @@ html
         script.
             $(function() {
 
+                // calculator
+
                 function calculate() {
                     var price = $("#range-price").slider("value");
                     var advertising = $("#range-advertising").slider("value");
@@ -541,4 +570,24 @@ html
                 $("#range-other-amount").text($("#range-other").slider("value")+" руб");
 
                 calculate();
+
+
+                // slider
+                {
+                    var currentSlide = 1;
+                    $('#slider-next').on('click', function() {
+                        $('.slider__slide').hide();
+                        currentSlide++;
+                        if (currentSlide > 5) currentSlide = 1;
+                        $('.slider__slide--'+currentSlide).show();
+                        $('#slider-page').html(currentSlide);
+                    });
+                    $('#slider-prev').on('click', function() {
+                        $('.slider__slide').hide();
+                        currentSlide--;
+                        if (currentSlide < 1) currentSlide = 5;
+                        $('.slider__slide--'+currentSlide).show();
+                        $('#slider-page').html(currentSlide);
+                    });
+                }
             });
