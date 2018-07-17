@@ -1,23 +1,44 @@
-.section-eight__title-text{
-    padding-bottom: 30px;
+.section-eight {
+    padding: 75px 0 93px;
+
+    &__title {
+        margin-bottom: 79px;
+    }
 }
 
-.section-eight__block{
+.section-eight__blocks {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 74px;
 }
 
-.section-eight__block1,
-.section-eight__block2,
-.section-eight__block3,
-.section-eight__block4{
+.section-eight__block {
     position: relative;
     background-color: #FAFAFA;
-    width: 45%;
+    width: 50%;
     height: 375px;
+    border: 1px solid #EDEDED;
+    padding: 50px;
+
+    &--1 {
+        border-top-left-radius: 10px;
+    }
+    &--2 {
+        border-top-right-radius: 10px;
+    }
+    &--3 {
+        border-bottom-left-radius: 10px;
+    }
+    &--4 {
+        border-bottom-right-radius: 10px;
+    }
+}
+
+.section-eight__block-desc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
 }
 
 .section-eight__foto{
@@ -26,68 +47,60 @@
     border: none;
     border-radius: 50%;
     background-color: black;
-    position: absolute;
-    top: 48px;
-    left: 50.86px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin-right: 25px;
 }
 
-.section-eight__name{
-    position: absolute;
-    top: 55px;
-    left: 176px;
-    font-family: dinpro;
+.section-eight__name {
     font-weight: bold;
     font-size: 23px;
+    line-height: 27px;
+    margin-bottom: 10px;
 }
 
-.section-eight__lication{
-    position: absolute;
-    top: 115px;
-    left: 176px;
-    font-family: dinpro;
+.section-eight__lication {
     font-weight: normal;
     font-size: 18px;
 }
 
-.section-eight__block-text{
-    position: absolute;
-    top: 175px;
-    left: 51px;
-    font-family: dinpro;
+.section-eight__block-text {
     font-weight: normal;
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 23px;
+    margin-bottom: 25px;
 }
 
 .section-eight__block-button{
-    position: absolute;
-    bottom: 41px;
-    left: 52px;
     border: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 254px;
     height: 50px;
     background-color: #4A76A8;
-    // background-image: url(../../images/i/vk.svg);
+    cursor: pointer;
+
     font-family: dinpro;
     font-weight: bold;
     font-size: 16px;
+    text-decoration: none;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: white;
 }
 
 .section-eight__btntext{
-    position: absolute;
-    left: 51px;
+
 }
 
 .section-eight__vk{
-    position: absolute;
-    left: 18.42px;
-    top: 20px;
     width: 19.44px;
     height: 11px;
+    margin-right: 13px;
+    margin-top: -4px;
 }
