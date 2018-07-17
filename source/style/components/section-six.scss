@@ -1,6 +1,16 @@
-.section-six__title{
-    margin-top: 31px;
-    margin-bottom: 38.49px;
+.section-six {
+    padding: 110px 0 76px;
+
+    background: {
+        image: url('../images/fam.jpg');
+        repeat: no-repeat;
+        position: right bottom;
+    }
+}
+
+.section-six__title {
+    margin-bottom: 86px;
+    padding: 0 225px;
 }
 
 .section-six__block{
@@ -9,7 +19,6 @@
 }
 
 .section-six__left-title{
-    margin-left: 128px;
     margin-bottom: 44px;
     font-family: dinpro;
     font-weight: bold;
@@ -17,8 +26,12 @@
 }
 
 .section-six__block-left,
-.section-six__block-right{
+.section-six__block-right {
     width: 50%;
+}
+
+.section-six__block-left {
+    padding-right: 40px;
 }
 
 .section-six__block-left{
@@ -28,8 +41,13 @@
 }
 
 .section-six__description-block{
-    margin-left: 128px;
     margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 27px;
+
+    &::before {
+        top: 7px;
+    }
 }
 
 .circle2,
@@ -43,40 +61,39 @@
 }
 
 // фоточка спарава
-.section-six__block-right{
-    background-color: black;
-    color: white;
-    height: 511px;
-}
+// .section-six__block-right{
+//     background-color: black;
+//     color: white;
+//     height: 511px;
+// }
 
 // кнопки слайдера
-.section-six__blockbuttons{
+.section-six__nav{
     position: relative;
+    display: flex;
+    align-items: center;
+
+    margin-top: 10px;
 }
 
-.section-six__img-left,
-.section-six__img-right{
+.section-six__prev,
+.section-six__next{
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 
 .section-six__img-left{
     transform: rotate(180deg);
-    position: absolute;
-    bottom: 76px;
-    left: 127px;
+}
+.section-six__img-right{
 }
 
-.section-six__img-right{
-    position: absolute;
-    bottom: 76px;
-    left: 220px;
+.section-six__numberpage {
+    margin: 0 15px;
 }
 
 .section-six__numberpage-sizemax{
-    position: absolute;
-    bottom: 78px;
-    left: 177px;
     font-size: 18px;
     font-family: dinpro;
     font-weight: normal;
