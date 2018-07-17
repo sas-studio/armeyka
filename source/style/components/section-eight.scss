@@ -104,3 +104,45 @@
     margin-right: 13px;
     margin-top: -4px;
 }
+
+@media screen and (max-width: 1200px){
+    .section-eight{
+        &__block{
+            &--4{
+                display: none;
+            }
+            width: 100%;
+        }
+
+        &__foto{
+            width: 78.19px;
+            height: 78.19px;
+        }
+
+        &__name{
+            font-size: 16px;
+        }
+
+        &__location{
+            font-size: 16px;
+        }
+
+        &__block-text{
+            font-size: 16px;
+        }
+
+        &__block-button{
+            width: 189.59px;
+            height: 39.09px;
+        }
+
+        &__vk{
+            width: 15.2px;
+            height: 8.6px;
+        }
+
+        &__btntext{
+            font-size: 12px;
+        }
+    }
+}

@@ -5,6 +5,12 @@
     &__title {
         margin-bottom: 83px;
     }
+
+    &__button{
+        text-align: center;
+        margin-top: 38.48px;
+        margin-left: 53px;
+    }
 }
 
 .section-seven__title-text{
@@ -48,6 +54,10 @@
     font-family: dinpro;
     font-weight: bold;
     margin-bottom: 50px;
+
+    &--paddingright{
+        padding-right: 685px;
+    }
 }
 
 .section-seven__block-text{
@@ -102,3 +112,55 @@
     top: 46.1px;
     right: 33px;
 }
+
+@media screen and (max-width: 1200px) {
+    .section-seven{
+        &__block{
+            width: 100%;
+            &--2{
+                display: none;
+            }
+
+            &--4{
+                display: none;
+            }
+
+            &--6{
+                display: none;
+            }
+        }
+    
+    
+        &__digits{
+            font-size: 16px;
+        }
+
+        &__block-text{
+            font-size: 16px;
+        }
+
+        &__img1{
+            width: 44.42px;
+            height: 44.42px;
+            position: absolute;
+            top: 26.65px;
+            right: 17.77px;
+        }
+
+        &__img3{
+            width: 44.42px;
+            height: 44.42px;
+            position: absolute;
+            top: 27.65px;
+            right: 17.77px;
+        }
+
+        &__img5{
+            width: 44.42px;
+            height: 44.42px;
+            position: absolute;
+            top: 29.19px;
+            right: 17.77px;
+        }
+    }
+} 
