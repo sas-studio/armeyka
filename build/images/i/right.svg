@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1341 4461 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fe0900;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="right" transform="translate(-1561)">
+    <rect id="Rectangle_2782" data-name="Rectangle 2782" class="cls-1" width="30" height="30" rx="15" transform="translate(220 4461)"/>
+    <path id="Path_78" data-name="Path 78" class="cls-2" d="M59.795,0,58.65,1.145l3.762,3.762L58.65,8.669l1.145,1.145L64.7,4.907Z" transform="translate(174.35 4470.936)"/>
+  </g>
+</svg>

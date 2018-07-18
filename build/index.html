@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PageTitle</title>
+    <link rel="stylesheet" href="style/foundation.css">
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body>
+    <section class="top-section">
+      <div class="main">
+        <div class="header">
+          <div class="logo header__logo"><img src="./images/logo.png" alt=""></div>
+          <div class="banner header__banner"><span>Новосибирск</span>&nbsp;- свободен для открытия франшизы</div>
+          <div class="header__contacts contacts h-adaptive-hide">
+            <div class="contacts__tel">+ 7 383&nbsp;<span>388-48-04</span></div>
+            <div class="contacts__place place"><span>Новосибирск</span>
+              <button><img src="./images/i/G61.svg" alt=""></button>
+            </div>
+          </div>
+        </div>
+        <div class="top-section__title">НАЧНИ ЗАРАБАТЫВАТЬ</div>
+        <div class="top-section__subtitle">на помощи призывникам в&nbsp;
+          <div class="place place--big"><span>Новосибирске</span>
+            <button><img src="./images/i/G61.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="top-section__price top-section-price">
+          <div class="top-section-price__text">от 300 000 рублей в месяц</div>
+          <div class="top-section-price__bottom"><span></span><img src="./images/i/star.svg" alt=""><span></span></div>
+        </div>
+        <div class="top-section__btn">
+          <button class="button">получить бизнес-план</button>
+        </div>
+        <div class="top-section__btn-down h-adaptive-hide"><img src="./images/i/down-arrow.svg" alt=""></div>
+      </div>
+    </section>
+    <section class="section-two">
+      <div class="main">
+        <div class="section-two__title super-title"><span class="super-title__red">[</span> ПОМОГАТЬ ПРИЗЫВНИКАМ —<span class="super-title__red"> выгодно ]</span></div>
+        <div class="section-two__block">
+          <div class="section-two__block1">
+            <div class="section-two__caption"><span class="section-two__dinprobold">100%<br>законно</span></div>
+            <div class="section-two__text">
+              <p class="section-two__donpromedium">Мы применяем только законные<br> методы получения отсрочки или<br> военного билета</p>
+            </div>
+            <div class="section-two__img"><img src="./images/i/guarantee.svg" alt=""></div>
+          </div>
+          <div class="section-two__block2">
+            <div class="section-two__caption"><span class="section-two__dinprobold">Поможем каждому<br>призывнику</span></div>
+            <div class="section-two__text">
+              <p class="section-two__donpromedium">У 97% призывников есть непризывные<br> заболевания, которые смогут обнаружить<br> наши врачи. Наши юристы добьются<br>выдачи военного билета.</p>
+            </div>
+            <div class="section-two__img"><img src="./images/i/teamwork.svg" alt=""></div>
+          </div>
+          <div class="section-two__block3">
+            <div class="section-two__caption"><span class="section-two__dinprobold">64%<br>не хотят в армию</span></div>
+            <div class="section-two__text">
+              <p class="section-two__donpromedium">Согласно официальному<br> опросу ВЦИОМ</p>
+            </div>
+            <div class="section-two__img"><img src="./images/i/presentation.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="section-two__title2">
+          <p class="section-two__title-text2"><span class="section-two__span-black"> [</span> Бизнес полностью упакован<span class="section-two__span-black"> ]</span></p>
+        </div>
+        <div class="description section-two__description">
+          <div class="description__block">
+            <div>Все бизнес-процессы настроены и опробованы на собственном опыте.</div>
+          </div>
+          <div class="description__block">
+            <div>Берем на себя запуск рекламы в твоем городе, обучим продажам, работе с CRM-системой,<br>сквозной аналитикой, телефонией и работе с личным кабинетом.</div>
+          </div>
+          <div class="description__block">
+            <div> Курирование клиентов также берем на себя.</div>
+          </div>
+        </div>
+        <div class="section-two__button">
+          <button class="button">получить бизнес-план</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-three">
+      <div class="main">
+        <div class="calculator">
+          <div class="calculator__left">
+            <div class="calculator__title">РАССЧИТАЙ СВОЙ&nbsp;<span>ЗАРАБОТОК</span></div>
+            <div class="calculator__row">
+              <div class="calculator__row-top">
+                <div class="calculator__row-title">Цена услуги, руб</div>
+                <div class="calculator__row-value"><span id="range-price-amount"></span></div>
+              </div>
+              <div class="calculator__row-middle">
+                <div id="range-price"></div>
+              </div>
+              <div class="calculator__row-bottom">
+                <div class="calculator__row-price-min">60 000</div>
+                <div class="calculator__row-price-text">Среднее значение у наших филиалов</div>
+                <div class="calculator__row-price-max">120 000</div>
+              </div>
+            </div>
+            <div class="calculator__row">
+              <div class="calculator__row-top">
+                <div class="calculator__row-title">Рекламный бюджет, руб</div>
+                <div class="calculator__row-value"><span id="range-advertising-amount"></span></div>
+              </div>
+              <div class="calculator__row-middle">
+                <div id="range-advertising"></div>
+              </div>
+              <div class="calculator__row-bottom">
+                <div class="calculator__row-price-min">0</div>
+                <div class="calculator__row-price-text">Среднее значение у наших филиалов</div>
+                <div class="calculator__row-price-max">500 000</div>
+              </div>
+            </div>
+            <div class="calculator__row">
+              <div class="calculator__row-top">
+                <div class="calculator__row-title">Прочие издержки (аренда), руб</div>
+                <div class="calculator__row-value"><span id="range-other-amount"></span></div>
+              </div>
+              <div class="calculator__row-middle">
+                <div id="range-other"></div>
+              </div>
+              <div class="calculator__row-bottom">
+                <div class="calculator__row-price-min">0</div>
+                <div class="calculator__row-price-text">Среднее значение у наших филиалов</div>
+                <div class="calculator__row-price-max">50 000</div>
+              </div>
+            </div>
+          </div>
+          <div class="calculator__right">
+            <div class="calculator__title calculator__title--right">ИТОГО</div>
+            <div class="calculator__receipts">
+              <div class="calculator__r-title">Ваша выручка</div>
+              <div class="calculator__r-value"><span id="calc-receipts">0</span>&nbsp; рублей</div>
+            </div>
+            <div class="calculator__profit">
+              <div class="calculator__r-title">Чистая прибыль</div>
+              <div class="calculator__r-value"><span id="calc-profit">0</span>&nbsp; рублей/год</div>
+            </div>
+            <div class="calculator__desc">* с учетом расходов на рекламу, офис, налоги, и курирование клиентов юристами и врачами головного офиса до получения военного билета</div>
+            <button class="button button--white">получить бизнес-план</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-four">
+      <div class="main">
+        <div class="section-four__title super-title"><span class="super-title__red">[</span><span> ОЧЕНЬ НИЗКАЯ КОНКУРЕНЦИЯ</span><span class="super-title__red"> ]</span></div>
+        <div class="section-four__block">
+          <div class="section-four__block1 section-four__content-block">
+            <div class="section-four__digits">850</div>
+            <div class="section-four__text">Агенств<br>недвижимости</div>
+          </div>
+          <div class="section-four__block2 section-four__content-block">
+            <div class="section-four__digits">1547</div>
+            <div class="section-four__text">Юридических<br>компаний</div>
+          </div>
+          <div class="section-four__block3">
+            <div class="section-four__blockred">
+              <div class="section-four__text-top">Всего</div>
+              <div class="section-four__content-block section-four__content-block--red">
+                <div class="section-four__digits section-four__digits--white">5</div>
+                <div class="section-four__text">Компаний помощи<br>призывникам</div>
+              </div><img class="section-four__star" src="./images/i/star.svg" alt="">
+            </div>
+            <div class="section-four__text-hint">Фактически рынок свободен!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-five">
+      <div class="main">
+        <div class="section-five__title super-title"><span class="super-title__red">[</span><span> ОБЪЕМ РЫНКА</span><span class="super-title__red"> ]</span></div>
+        <div class="banner banner--red section-five__banner"><span>Новосибирск</span>&nbsp;- свободен для открытия франшизы</div>
+        <div class="section-five__blocks">
+          <div class="section-five__block section-five__block--1">
+            <div class="section-five__digits section-five__digits-top">110 722</div>
+            <div class="section-five__block-text">Призывников<br>вашем городе</div><img class="section-five__img1" src="./images/i/goal.svg" alt="">
+          </div>
+          <div class="section-five__block">
+            <div class="section-five__digits section-five__digits-top">41 390</div>
+            <div class="section-five__block-text">Пользующихся<br>отсрочкой</div><img class="section-five__img2" src="./images/i/cash.svg" alt="">
+          </div>
+          <div class="section-five__block section-five__block--3">
+            <div class="section-five__digits section-five__digits-top">29 389</div>
+            <div class="section-five__block-text">План по призыву<br>за 9 лет</div><img class="section-five__img3" src="./images/i/email.svg" alt="">
+          </div>
+          <div class="section-five__block section-five__block--4">
+            <div class="section-five__digits"><span></span>9.965<span class="section-five__size30"> млрд руб.</span></div>
+            <div class="section-five__block-text section-five__block-texttop">Потенциальный объём<br>рынка в вашем городе (TAM)</div>
+          </div>
+          <div class="section-five__block">
+            <p class="section-five__digits"><span></span>3.595<span class="section-five__size30"> млрд руб.</span></p>
+            <div class="section-five__block-text section-five__block-texttop">Реальный объем рынка<br>в вашем городе (SAM)</div>
+          </div>
+          <div class="section-five__block section-five__block--6">
+            <p class="section-five__digits"><span></span>180<span class="section-five__size30"> млн руб.</span></p>
+            <div class="section-five__block-text section-five__block-texttop">Доля рынка 2% (SOM)</div>
+          </div>
+        </div>
+        <P class="section-five___text-bottom">План по призыву за 9 лет – в сумме составляет лишь 26,6% от общего количества призывников.<br>При этом - оставшиеся 73,4% призывников - боятся оказаться в списке призванных.</P>
+      </div>
+    </section>
+    <section class="section-six slider">
+      <div class="main">
+        <div class="section-six__title super-title"><span class="super-title__red">[</span><span> СФЕРА ПОМОЩИ ПРИЗЫВНИКАМ — СОЦИАЛЬНО И ЭКОНОМИЧЕСКИ ПОЛЕЗНА!</span><span class="super-title__red"> ]</span></div>
+        <div class="section-six__left-title">Экономическая польза для государства</div>
+        <div class="section-six__block" id="slider">
+          <div class="section-six__block-left slider__slide slider__slide--1">
+            <div class="description__block section-six__description-block">среднестатистический россиянин получает 33000руб в мес.</div>
+            <div class="description__block section-six__description-block">с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);</div>
+            <div class="description__block section-six__description-block">когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике</div>
+            <div class="description__block section-six__description-block">в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц</div>
+            <div class="description__block section-six__description-block">а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;</div>
+          </div>
+          <div class="section-six__block-left slider__slide slider__slide--2" style="display: none;">
+            <div class="description__block section-six__description-block">среднестатистический россиянин получает 33000руб в мес.</div>
+            <div class="description__block section-six__description-block">с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);</div>
+            <div class="description__block section-six__description-block">когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике</div>
+            <div class="description__block section-six__description-block">в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц</div>
+            <div class="description__block section-six__description-block">а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;</div>
+          </div>
+          <div class="section-six__block-left slider__slide slider__slide--3" style="display: none;">
+            <div class="description__block section-six__description-block">среднестатистический россиянин получает 33000руб в мес.</div>
+            <div class="description__block section-six__description-block">с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);</div>
+            <div class="description__block section-six__description-block">когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике</div>
+            <div class="description__block section-six__description-block">в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц</div>
+            <div class="description__block section-six__description-block">а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;</div>
+          </div>
+          <div class="section-six__block-left slider__slide slider__slide--4" style="display: none;">
+            <div class="description__block section-six__description-block">среднестатистический россиянин получает 33000руб в мес.</div>
+            <div class="description__block section-six__description-block">с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);</div>
+            <div class="description__block section-six__description-block">когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике</div>
+            <div class="description__block section-six__description-block">в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц</div>
+            <div class="description__block section-six__description-block">а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;</div>
+          </div>
+          <div class="section-six__block-left slider__slide slider__slide--5" style="display: none;">
+            <div class="description__block section-six__description-block">среднестатистический россиянин получает 33000руб в мес.</div>
+            <div class="description__block section-six__description-block">с этой зарплаты в бюджет государства платится прямых налогов 14190руб в мес (43%);</div>
+            <div class="description__block section-six__description-block">когда гражданин платит за услуги и товары другим - с них тоже платится налог государству (НДС, налог на прибыль, акцизы и т.д.) - это более 4000руб в мес, эта сумма циркулирует в экономике</div>
+            <div class="description__block section-six__description-block">в среднем один гражданин приносит в бюджет около 20тыс.руб в месяц</div>
+            <div class="description__block section-six__description-block">а польза другим субъектам экономики (компаниям, предприятиям, работникам) - еще выше;</div>
+          </div>
+          <div class="section-six__block-right h-adaptive-hide">
+            <!-- img(src="", alt="Фоточка троих очень счастливых людей)")-->
+          </div>
+        </div>
+        <div class="section-six__nav">
+          <button class="section-six__prev" id="slider-prev"><img class="section-six__img-left" src="./images/i/right.svg" alt=""></button>
+          <div class="section-six__numberpage">
+            <p class="section-six__numberpage-sizemax"><span id="slider-page">1</span><span class="section-six__numberpage-sizemin">/5</span></p>
+          </div>
+          <button class="section-six__next" id="slider-next"><img class="section-six__img-right" src="./images/i/right.svg" alt=""></button>
+        </div>
+      </div>
+    </section>
+    <section class="section-seven">
+      <div class="main">
+        <div class="section-seven__title super-title"><span class="super-title__red">[</span><span> ЧТО ВХОДИТ В ФРАНШИЗУ</span><span class="super-title__red"> ]</span></div>
+        <div class="section-seven__blocks">
+          <div class="section-seven__block section-seven__block--1">
+            <div class="section-seven__digits">Сопровождение клиентов<br>берем на себя</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img1" src="./images/i/customer-service1.svg" alt=""></div>
+          </div>
+          <div class="section-seven__block section-seven__block--2">
+            <div class="section-seven__digits">Маркетинг<br>берем на себя</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img2" src="./images/i/megaphone2.svg" alt=""></div>
+          </div>
+          <div class="section-seven__block section-seven__block--5">
+            <div class="section-seven__digits">Полное обучение</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img3" src="./images/i/statistics3.svg" alt=""></div>
+          </div>
+          <div class="section-seven__block section-seven__block--6">
+            <div class="section-seven__digits">CRM-система</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img4" src="./images/i/computer4.svg" alt=""></div>
+          </div>
+          <div class="section-seven__block section-seven__block--3">
+            <div class="section-seven__digits section-seven__digits--paddingright">Известный в России брэнд</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинских нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img5" src="./images/i/team5.svg" alt=""></div>
+          </div>
+          <div class="section-seven__block section-seven__block--4">
+            <div class="section-seven__digits">Качественная<br>документация</div>
+            <div class="section-seven__block-text">Курировать клиентов будут наши юристы и врачи (через личный кабинет). Вам не придется вникать во множество юридических и медицинскихих нюансов. Вы сможете целиком сфокусироваться на продажах.<img class="section-seven__img6" src="./images/i/list6.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="section-seven__button">
+          <button class="button">получить бизнес-план</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-eight">
+      <div class="main">
+        <div class="section-eight__title super-title"><span class="super-title__red">[</span><span> НАШИ ФРАНЧАЙЗИ</span><span class="super-title__red"> ]</span></div>
+        <div class="section-eight__blocks">
+          <div class="section-eight__block section-eight__block--1">
+            <div class="section-eight__block-desc">
+              <div class="section-eight__foto" style="background-image: url(./images/director.jpg);"></div>
+              <div class="section-eight__block-desc-text">
+                <div class="section-eight__name">Максим Петрович<br>Олейников</div>
+                <div class="section-eight__lication">г. Новосибирск</div>
+              </div>
+            </div>
+            <div class="section-eight__block-text">Купил франшизу в Красноясрке в январе 2017 года. Через 3 месяца компания вышла на стабильную чистую прибыль в 230 тысяч рублей</div><a class="section-eight__block-button" href=""><img class="section-eight__vk" src="./images/i/vk.svg" alt=""><span class="section-eight__btntext">Пообщаться с Максимом</span></a>
+          </div>
+          <div class="section-eight__block section-eight__block--2">
+            <div class="section-eight__block-desc">
+              <div class="section-eight__foto" style="background-image: url(./images/director.jpg);"></div>
+              <div class="section-eight__block-desc-text">
+                <div class="section-eight__name">Максим Петрович<br>Олейников</div>
+                <div class="section-eight__lication">г. Новосибирск</div>
+              </div>
+            </div>
+            <div class="section-eight__block-text">Купил франшизу в Красноясрке в январе 2017 года.  Через 3 месяца компания вышла на стабильную чистую прибыль в 230 тысяч рублей</div><a class="section-eight__block-button" href=""><img class="section-eight__vk" src="./images/i/vk.svg" alt=""><span class="section-eight__btntext">Пообщаться с Максимом</span></a>
+          </div>
+          <div class="section-eight__block section-eight__block--3">
+            <div class="section-eight__block-desc">
+              <div class="section-eight__foto" style="background-image: url(./images/director.jpg);"></div>
+              <div class="section-eight__block-desc-text">
+                <div class="section-eight__name">Максим Петрович<br>Олейников</div>
+                <div class="section-eight__lication">г. Новосибирск</div>
+              </div>
+            </div>
+            <div class="section-eight__block-text">Купил франшизу в Красноясрке в январе 2017 года. Через 3 месяца компания вышла на стабильную чистую прибыль в 230 тысяч рублей</div><a class="section-eight__block-button" href=""><img class="section-eight__vk" src="./images/i/vk.svg" alt=""><span class="section-eight__btntext">Пообщаться с Максимом</span></a>
+          </div>
+          <div class="section-eight__block section-eight__block--4">
+            <div class="section-eight__block-desc">
+              <div class="section-eight__foto" style="background-image: url(./images/director.jpg);"></div>
+              <div class="section-eight__block-desc-text">
+                <div class="section-eight__name">Максим Петрович<br>Олейников</div>
+                <div class="section-eight__lication">г. Новосибирск</div>
+              </div>
+            </div>
+            <div class="section-eight__block-text">Купил франшизу в Красноясрке в январе 2017 года. Через 3 месяца компания вышла на стабильную чистую прибыль в 230 тысяч рублей</div><a class="section-eight__block-button" href=""><img class="section-eight__vk" src="./images/i/vk.svg" alt=""><span class="section-eight__btntext">Пообщаться с Максимом</span></a>
+          </div>
+        </div>
+        <div class="section-eight__button">
+          <button class="button">получить бизнес-план</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <div class="main">
+        <div class="section-form__content">
+          <form class="section-form__form">
+            <div class="super-title section-form__super-title"><span class="super-title__red">[</span><span> ОСТАЛИСЬ ВОПРОСЫ?</span><span class="super-title__red">]</span></div>
+            <div class="section-form__subtitle">Оставьте заявку и с Вами свяжется<br>директор по франчайзингу</div>
+            <input class="section-form__input" type="text" placeholder="Ваше имя">
+            <input class="section-form__input" type="tel" placeholder="Телефон">
+            <input class="section-form__input" type="email" placeholder="email">
+            <button class="button section-form__button" type="submit">ПОЛУЧИТЬ БИЗНЕС-ПЛАН</button>
+            <div class="section-form__confidence">
+              <div class="checkbox">
+                <input type="checkbox" id="agree-confidence">
+                <label for="agree-confidence"></label>
+              </div><span>Я согласен и ознакомлен с<a href=""> Пользовательским соглашением</a> и<a href=""> Политикой конфиденциальности</a></span>
+            </div>
+          </form>
+          <div class="section-form__photo">
+            <div class="section-form__director">
+              <div class="section-form__director-name">Некрасов Никита</div>
+              <div class="section-form__director-position">директор по франчайзингу</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section-footer">
+      <div class="section-footer__left">
+        <div class="section-footer__logo"><img src="./images/logo.png" alt=""></div>
+        <div class="section-footer__visa"><img src="./images/visa.png" alt=""></div>
+      </div>
+      <div class="section-footer__middle">
+        <div class="section-footer__contacts contacts">
+          <div class="contacts__tel">+ 7 383&nbsp;<span>388-48-04</span></div>
+          <div class="contacts__place place"><span>Новосибирск</span>
+            <button><img src="./images/i/G61.svg" alt=""></button>
+          </div>
+        </div>
+      </div>
+      <div class="section-footer__right">ИП Коньяков С.Д.<br>ИНН 540110257752 ОГРНИП 315547600053812<br>Р/сч: 40802810600010000088 в ПАО БАНК «ФК ОТКРЫТИЕ»<br>БИК 045004839<br>Корр. счет: 30101810550040000839</div>
+    </footer>
+    <script src="js/foundation.js"></script>
+    <script>
+      $(function() {
+      
+          // calculator
+      
+          function calculate() {
+              var price = $("#range-price").slider("value");
+              var advertising = $("#range-advertising").slider("value");
+              var other = $("#range-other").slider("value");
+      
+              // [1] * округлить(3 + [2]/12) - [3]
+              var receipts = price * Math.round(3 + advertising / 12000) - other;
+              // [ВЫРУЧКА]*0,67 - [2] - [3] - [ВЫРУЧКА]*0,06
+              var profit = receipts * 0.67 - advertising - other - receipts * 0.06;
+      
+              $('#calc-receipts').text(receipts);
+              $('#calc-profit').text(profit);
+          }
+      
+          $("#range-price").slider({
+            range: "min",
+            value: 80000,
+            min: 60000,
+            max: 120000,
+            slide: function( event, ui ) {
+              $("#range-price-amount").text(ui.value+" руб");
+              price = ui.value;
+              calculate();
+            }
+          });
+          $("#range-price-amount").text($("#range-price").slider("value")+" руб");
+      
+          $("#range-advertising").slider({
+            range: "min",
+            value: 40000,
+            min: 0,
+            max: 500000,
+            slide: function( event, ui ) {
+              $("#range-advertising-amount").text(ui.value+" руб");
+              advertising = ui.value;
+              calculate();
+            }
+          });
+          $("#range-advertising-amount").text($("#range-advertising").slider("value")+" руб");
+      
+          $("#range-other").slider({
+            range: "min",
+            value: 10000,
+            min: 0,
+            max: 50000,
+            slide: function( event, ui ) {
+              $("#range-other-amount").text(ui.value+" руб");
+              other = ui.value;
+              calculate();
+            }
+          });
+          $("#range-other-amount").text($("#range-other").slider("value")+" руб");
+      
+          calculate();
+      
+      
+          // slider
+          {
+              var currentSlide = 1;
+              $('#slider-next').on('click', function() {
+                  $('.slider__slide').hide();
+                  currentSlide++;
+                  if (currentSlide > 5) currentSlide = 1;
+                  $('.slider__slide--'+currentSlide).show();
+                  $('#slider-page').html(currentSlide);
+              });
+              $('#slider-prev').on('click', function() {
+                  $('.slider__slide').hide();
+                  currentSlide--;
+                  if (currentSlide < 1) currentSlide = 5;
+                  $('.slider__slide--'+currentSlide).show();
+                  $('#slider-page').html(currentSlide);
+              });
+          }
+      });
+    </script>
+  </body>
+</html>

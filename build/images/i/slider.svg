@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-1030 1847 43 43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #5d5d50;
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        filter: url(#slider);
+      }
+    </style>
+    <filter id="slider" x="-1030" y="1847" width="43" height="43" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-4" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <g id="slider-2" data-name="slider" class="cls-1" transform="translate(-1021 1853)">
+      <circle class="cls-2" cx="12.5" cy="12.5" r="12.5"/>
+      <circle class="cls-3" cx="12.5" cy="12.5" r="9"/>
+    </g>
+  </g>
+</svg>
