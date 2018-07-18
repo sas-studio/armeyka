@@ -6,6 +6,7 @@
 @media screen and (max-width: 1200px) {
     .main {
         width: calc(100% - 30px);
+        overflow: hidden;
     }
     .h-adaptive-hide {
         display: none;

@@ -105,7 +105,8 @@
         }
 
         &__super-title{
-            margin: 27px 67px;
+            margin: 0 auto 27px ;
+            text-align: center !important;
         }
 
         &__subtitle{
@@ -125,6 +126,8 @@
             width: 345px;
             height: 70px;
             margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &__button{
@@ -136,6 +139,7 @@
             line-height: 18px;
             margin-top: 0px;
             margin-bottom: 0px;
+            justify-content: center;
         }
 
         &__photo{
