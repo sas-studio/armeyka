@@ -13,7 +13,10 @@
         cursor: pointer;
     }
     input:checked + label {
-        // background-image: url('../images/i/slider.svg');
+        background-image: url('../images/i/pathc.svg');
+        background-repeat: no-repeat;
+        background-position: center center;
         background-color: $colorred;
+        background-size: 75% 90%;
     }
 }

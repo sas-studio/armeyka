@@ -526,7 +526,7 @@ html
                     // [1] * округлить(3 + [2]/12) - [3]
                     var receipts = price * Math.round(3 + advertising / 12000) - other;
                     // [ВЫРУЧКА]*0,67 - [2] - [3] - [ВЫРУЧКА]*0,06
-                    var profit = receipts * 0.67 - advertising - other - receipts * 0.06;
+                    var profit = Math.round(receipts * 0.67 - advertising - other - receipts * 0.06);
 
                     $('#calc-receipts').text(receipts);
                     $('#calc-profit').text(profit);
