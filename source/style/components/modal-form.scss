@@ -1,0 +1,41 @@
+.modal-form {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    top: 10px;
+    z-index: 100;
+    width: 750px;
+
+    &__close {
+        position: absolute;
+        top: 31px;
+        right: 26px;
+
+        color: #454545;
+        font-size: 20px;
+
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #F5F4F4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modal-form {
+        width: 100%;
+
+        &__close {
+            top: 20px;
+            right: 20px;
+        }
+    }
+}

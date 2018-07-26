@@ -7,7 +7,7 @@ html
 
         title PageTitle
         link(rel="stylesheet" href='style/foundation.css')
-        link(rel="stylesheet" href='style/style.css?2')
+        link(rel="stylesheet" href='style/style.css?3')
     body
 
         section.top-section
@@ -43,7 +43,7 @@ html
                         span
 
                 .top-section__btn
-                    button.button получить бизнес-план
+                    button.button.open-modal получить бизнес-план
 
                 .top-section__btn-down.h-adaptive-hide
                     img(src="./images/i/down-arrow.svg", alt="")
@@ -123,7 +123,7 @@ html
                         div  Курирование клиентов также берем на себя.
 
                 .section-two__button
-                    button.button получить бизнес-план
+                    button.button.open-modal получить бизнес-план
 
         section.section-three
             .main
@@ -183,7 +183,7 @@ html
                                 | &nbsp; рублей/год
                         .calculator__desc * с учетом расходов на рекламу, офис, налоги, и курирование клиентов юристами и врачами головного офиса до получения военного билета
 
-                        button.button.button--white получить бизнес-план
+                        button.button.button--white.open-modal получить бизнес-план
 
 
 
@@ -365,7 +365,7 @@ html
                             img.section-seven__img6(src="./images/i/list6.svg", alt="")
 
                 .section-seven__button
-                    button.button получить бизнес-план
+                    button.button.open-modal получить бизнес-план
 
         section.section-eight
             .main
@@ -436,28 +436,28 @@ html
                             span.section-eight__btntext Пообщаться с Максимом
 
                 .section-eight__button
-                    button.button получить бизнес-план
+                    button.button.open-modal получить бизнес-план
 
         section.section-form
             .main
                 .section-form__content
-                    form.section-form__form
-                        .super-title.section-form__super-title
+                    form.form
+                        .super-title.form__super-title
                             span.super-title__red [
                             span  ОСТАЛИСЬ ВОПРОСЫ?
                             span.super-title__red ]
-                        .section-form__subtitle
+                        .form__subtitle
                             | Оставьте заявку и с Вами свяжется
                             br
                             | директор по франчайзингу
 
-                        input(type="text" placeholder="Ваше имя").section-form__input
-                        input(type="tel" placeholder="Телефон").section-form__input
-                        input(type="email" placeholder="email").section-form__input
+                        input(type="text" placeholder="Ваше имя").form__input
+                        input(type="tel" placeholder="Телефон").form__input
+                        input(type="email" placeholder="email").form__input
 
-                        button(type="submit").button.section-form__button ПОЛУЧИТЬ БИЗНЕС-ПЛАН
+                        button(type="submit").button.form__button ПОЛУЧИТЬ БИЗНЕС-ПЛАН
 
-                        .section-form__confidence
+                        .form__confidence
                             .checkbox
                                 input(type="checkbox" id="agree-confidence")
                                 label(for="agree-confidence")
@@ -498,12 +498,31 @@ html
                 br
                 | Корр. счет: 30101810550040000839
 
+        .h-blackout#h-blackout
+        #modal-form.modal-form
+            .modal-form__close#modal-form__close x
+            form.form.form--modal
+                .super-title.form__modal-title
+                    span.super-title__red [
+                    span  получите бизнес план
+                    span.super-title__red  ]
 
+                input(type="text" placeholder="Ваше имя").form__input.form__input--modal
+                input(type="tel" placeholder="Телефон").form__input.form__input--modal
+                input(type="email" placeholder="email").form__input.form__input--modal
 
+                button(type="submit").button.form__button ПОЛУЧИТЬ БИЗНЕС-ПЛАН
 
-
-
-
+                .form__confidence.form__confidence--modal
+                    .checkbox
+                        input(type="checkbox" id="agree-confidence-modal")
+                        label(for="agree-confidence-modal")
+                    span
+                        | Я согласен и ознакомлен с
+                        a(href="")  Пользовательским соглашением
+                        br
+                        |  и
+                        a(href="")  Политикой конфиденциальности
 
 
 
@@ -517,7 +536,6 @@ html
             $(function() {
 
                 // calculator
-
                 function calculate() {
                     var price = $("#range-price").slider("value");
                     var advertising = $("#range-advertising").slider("value");
@@ -592,4 +610,25 @@ html
                         $('#slider-page').html(currentSlide);
                     });
                 }
+
+
+                // modal
+                $('.open-modal').on('click', function() {
+                    $('#modal-form').css({
+                        'top': pageYOffset + 85 + 'px'
+                    });
+
+                    $('#h-blackout').fadeIn(200);
+                    $('#modal-form').fadeIn(200);
+                });
+
+                $('#modal-form__close').on('click', function() {
+                    $('#h-blackout').fadeOut(200);
+                    $('#modal-form').fadeOut(200);
+                });
+
+                $('#h-blackout').on('click', function() {
+                    $('#h-blackout').fadeOut(200);
+                    $('#modal-form').fadeOut(200);
+                });
             });
