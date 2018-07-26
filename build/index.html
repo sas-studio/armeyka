@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PageTitle</title>
     <link rel="stylesheet" href="style/foundation.css">
-    <link rel="stylesheet" href="style/style.css?2">
+    <link rel="stylesheet" href="style/style.css?3">
   </head>
   <body>
     <section class="top-section">
@@ -30,7 +30,7 @@
           <div class="top-section-price__bottom"><span></span><img src="./images/i/star.svg" alt=""><span></span></div>
         </div>
         <div class="top-section__btn">
-          <button class="button">получить бизнес-план</button>
+          <button class="button open-modal">получить бизнес-план</button>
         </div>
         <div class="top-section__btn-down h-adaptive-hide"><img src="./images/i/down-arrow.svg" alt=""></div>
       </div>
@@ -76,7 +76,7 @@
           </div>
         </div>
         <div class="section-two__button">
-          <button class="button">получить бизнес-план</button>
+          <button class="button open-modal">получить бизнес-план</button>
         </div>
       </div>
     </section>
@@ -139,7 +139,7 @@
               <div class="calculator__r-value"><span id="calc-profit">0</span>&nbsp; рублей/год</div>
             </div>
             <div class="calculator__desc">* с учетом расходов на рекламу, офис, налоги, и курирование клиентов юристами и врачами головного офиса до получения военного билета</div>
-            <button class="button button--white">получить бизнес-план</button>
+            <button class="button button--white open-modal">получить бизнес-план</button>
           </div>
         </div>
       </div>
@@ -285,7 +285,7 @@
           </div>
         </div>
         <div class="section-seven__button">
-          <button class="button">получить бизнес-план</button>
+          <button class="button open-modal">получить бизнес-план</button>
         </div>
       </div>
     </section>
@@ -335,21 +335,21 @@
           </div>
         </div>
         <div class="section-eight__button">
-          <button class="button">получить бизнес-план</button>
+          <button class="button open-modal">получить бизнес-план</button>
         </div>
       </div>
     </section>
     <section class="section-form">
       <div class="main">
         <div class="section-form__content">
-          <form class="section-form__form">
-            <div class="super-title section-form__super-title"><span class="super-title__red">[</span><span> ОСТАЛИСЬ ВОПРОСЫ?</span><span class="super-title__red">]</span></div>
-            <div class="section-form__subtitle">Оставьте заявку и с Вами свяжется<br>директор по франчайзингу</div>
-            <input class="section-form__input" type="text" placeholder="Ваше имя">
-            <input class="section-form__input" type="tel" placeholder="Телефон">
-            <input class="section-form__input" type="email" placeholder="email">
-            <button class="button section-form__button" type="submit">ПОЛУЧИТЬ БИЗНЕС-ПЛАН</button>
-            <div class="section-form__confidence">
+          <form class="form">
+            <div class="super-title form__super-title"><span class="super-title__red">[</span><span> ОСТАЛИСЬ ВОПРОСЫ?</span><span class="super-title__red">]</span></div>
+            <div class="form__subtitle">Оставьте заявку и с Вами свяжется<br>директор по франчайзингу</div>
+            <input class="form__input" type="text" placeholder="Ваше имя">
+            <input class="form__input" type="tel" placeholder="Телефон">
+            <input class="form__input" type="email" placeholder="email">
+            <button class="button form__button" type="submit">ПОЛУЧИТЬ БИЗНЕС-ПЛАН</button>
+            <div class="form__confidence">
               <div class="checkbox">
                 <input type="checkbox" id="agree-confidence">
                 <label for="agree-confidence"></label>
@@ -380,12 +380,28 @@
       </div>
       <div class="section-footer__right">ИП Коньяков С.Д.<br>ИНН 540110257752 ОГРНИП 315547600053812<br>Р/сч: 40802810600010000088 в ПАО БАНК «ФК ОТКРЫТИЕ»<br>БИК 045004839<br>Корр. счет: 30101810550040000839</div>
     </footer>
+    <div class="h-blackout" id="h-blackout"></div>
+    <div class="modal-form" id="modal-form">
+      <div class="modal-form__close" id="modal-form__close">x</div>
+      <form class="form form--modal">
+        <div class="super-title form__modal-title"><span class="super-title__red">[</span><span> получите бизнес план</span><span class="super-title__red"> ]</span></div>
+        <input class="form__input form__input--modal" type="text" placeholder="Ваше имя">
+        <input class="form__input form__input--modal" type="tel" placeholder="Телефон">
+        <input class="form__input form__input--modal" type="email" placeholder="email">
+        <button class="button form__button" type="submit">ПОЛУЧИТЬ БИЗНЕС-ПЛАН</button>
+        <div class="form__confidence form__confidence--modal">
+          <div class="checkbox">
+            <input type="checkbox" id="agree-confidence-modal">
+            <label for="agree-confidence-modal"></label>
+          </div><span>Я согласен и ознакомлен с<a href=""> Пользовательским соглашением</a><br> и<a href=""> Политикой конфиденциальности</a></span>
+        </div>
+      </form>
+    </div>
     <script src="js/foundation.js"></script>
     <script>
       $(function() {
       
           // calculator
-      
           function calculate() {
               var price = $("#range-price").slider("value");
               var advertising = $("#range-advertising").slider("value");
@@ -460,6 +476,27 @@
                   $('#slider-page').html(currentSlide);
               });
           }
+      
+      
+          // modal
+          $('.open-modal').on('click', function() {
+              $('#modal-form').css({
+                  'top': pageYOffset + 85 + 'px'
+              });
+      
+              $('#h-blackout').fadeIn(200);
+              $('#modal-form').fadeIn(200);
+          });
+      
+          $('#modal-form__close').on('click', function() {
+              $('#h-blackout').fadeOut(200);
+              $('#modal-form').fadeOut(200);
+          });
+      
+          $('#h-blackout').on('click', function() {
+              $('#h-blackout').fadeOut(200);
+              $('#modal-form').fadeOut(200);
+          });
       });
     </script>
   </body>
